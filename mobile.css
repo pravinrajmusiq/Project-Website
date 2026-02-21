@@ -33,15 +33,6 @@
     margin: 0 !important;
   }
 
-  /* HOME PAGE - shrink house/hero image so everything fits in one screen */
-  .main-content {
-    min-height: 0 !important;
-    max-height: 50vh !important;
-    background-size: contain !important;
-    background-position: center center !important;
-    background-repeat: no-repeat !important;
-  }
-
   /* HOME PAGE - compact right-side nav, middle vertical zone, house image clear on left */
   .main-content .right-col {
     position: absolute !important;
