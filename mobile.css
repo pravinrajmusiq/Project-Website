@@ -1,119 +1,87 @@
-/* Mobile responsive styles - phone view */
 @media (max-width: 768px) {
+
   html, body {
     overflow: auto !important;
+    height: auto !important;
   }
 
   .wrapper {
     height: auto !important;
     min-height: 100vh;
+    position: relative !important;
   }
 
-  /* Header - all pages */
+  /* Header */
   .header-title {
     font-size: 1.4rem !important;
-    padding: 0 60px !important;
     letter-spacing: 2px !important;
+    padding: 0 70px !important;
   }
 
-  .back-link {
-    width: 80px !important;
-    padding-right: 12px !important;
-    font-size: 0.8rem !important;
-  }
-
-  /* HOME PAGE - buttons on right side, not blocking house */
+  /* HOME PAGE - buttons sit in right side middle zone */
   .nav-wrapper {
-    position: absolute !important;
-    top: 80px !important;
-    right: 8px !important;
-    left: auto !important;
+    position: static !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: flex-end !important;
-    justify-content: flex-start !important;
-    padding: 0 !important;
-    gap: 7px !important;
-    z-index: 10 !important;
-    width: 55% !important;
+    justify-content: center !important;
+    padding: 12px 8px !important;
+    gap: 6px !important;
+    width: 100% !important;
+    background: transparent !important;
   }
 
   .nav-btn {
-    width: 100% !important;
-    font-size: 0.52rem !important;
+    width: 60% !important;
+    font-size: 0.55rem !important;
     padding: 7px 10px !important;
     min-height: unset !important;
     letter-spacing: 0.5px !important;
   }
 
-  /* Sub-pages: rumah-limas, blue-mosque, istana-shah-alam, sekinchan-paddy-field */
+  /* BODY CONTENT */
   .body-content {
-    overflow-y: auto !important;
-    padding: 12px 10px !important;
-  }
-
-  .content-group {
-    width: 95% !important;
-    max-width: 100%;
+    flex-direction: column !important;
+    padding: 20px 16px !important;
+    gap: 16px !important;
+    overflow: auto !important;
+    height: auto !important;
   }
 
   .main-photo {
-    max-height: 40vh !important;
+    width: 92% !important;
+    height: auto !important;
+    max-height: none !important;
   }
 
   .explain-box {
-    height: 120px !important;
+    width: 92% !important;
+    height: auto !important;
+    max-height: none !important;
   }
 
-  /* Purpose page - two columns */
-  .body-content {
-    flex-direction: column !important;
-    gap: 16px !important;
-    padding: 16px 12px !important;
-  }
-
-  .body-content .left-col {
+  .left-col {
+    width: 92% !important;
     min-width: unset !important;
-    max-width: 100% !important;
-    width: 100% !important;
-    padding: 20px 16px !important;
+    max-width: unset !important;
   }
 
-  .body-content .right-col img {
-    max-width: 100% !important;
-    width: 100% !important;
+  .right-col img {
+    width: 92% !important;
+    max-width: unset !important;
   }
 
-  /* Photos in packaging - three columns */
-  .body-content .left-col,
-  .body-content .center-col,
-  .body-content .right-col {
-    min-width: unset !important;
-    width: 100% !important;
-    max-width: 100% !important;
+  .center-col img {
+    width: 92% !important;
   }
 
-  .body-content .left-col {
-    align-items: flex-start !important;
-  }
-
-  .body-content .center-col img {
-    width: 100% !important;
-    max-width: 320px !important;
-  }
-
-  .body-content .label-row {
-    flex-direction: row !important;
-    justify-content: flex-start !important;
-  }
-
-  /* Video page */
-  .body-content video {
-    max-width: 100% !important;
+  video {
+    width: 95% !important;
+    max-width: unset !important;
   }
 
   footer {
-    font-size: 0.75rem !important;
-    padding: 8px !important;
+    padding: 14px !important;
+    font-size: 0.8rem !important;
   }
 }
