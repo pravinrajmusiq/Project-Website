@@ -6,9 +6,17 @@
   }
 
   .wrapper {
-    height: auto !important;
+    height: 100vh !important;
     min-height: 100vh;
     position: relative !important;
+    overflow: hidden !important;
+  }
+
+  /* Home page: constrain main hero so footer stays visible */
+  .main-content {
+    max-height: 55vh !important;
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
   }
 
   /* Header override - sub-pages use .header, .header-title (index has no header; SELANGOR/INFRA in bg image) */
@@ -83,7 +91,7 @@
   .main-photo {
     width: 92% !important;
     height: auto !important;
-    max-height: none !important;
+    max-height: 55vh !important;
   }
 
   .explain-box {
@@ -115,5 +123,6 @@
   footer {
     padding: 14px !important;
     font-size: 0.8rem !important;
+    flex-shrink: 0 !important;
   }
 }

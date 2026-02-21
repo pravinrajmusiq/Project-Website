@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Photos in Packaging - SELANGOR</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../mobile.css">
   <style>
     * { margin:0; padding:0; box-sizing:border-box; }
@@ -86,45 +86,50 @@
       pointer-events: none;
     }
 
-    /* LEFT - labels with gold arrows */
-    .left-col {
-      position: relative;
-      z-index: 1;
-      display: flex;
-      flex-direction: column;
-      gap: 36px;
-      align-items: flex-end;
-      min-width: 220px;
-      margin-right: -10px;
-    }
-    .label-row {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
+    /* Labels positioned beside arrow tips on image */
     .label-text {
       font-family: 'Open Sans', sans-serif;
-      font-size: 0.95rem;
+      font-size: 20px;
       font-weight: 700;
       color: #3B1F0E;
       letter-spacing: 1px;
       text-align: right;
       line-height: 1.3;
+      text-transform: uppercase;
     }
     /* CENTER - packaging image + caption */
     .center-col {
       position: relative;
       z-index: 1;
+      flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       gap: 12px;
+      margin-left: 200px;
     }
-    .center-col img {
-      width: 320px;
+    .img-wrapper {
+      position: relative;
+      display: inline-block;
+    }
+    .img-wrapper img {
+      width: 60vw;
+      max-width: 700px;
       height: auto;
       display: block;
     }
+    .img-wrapper .label-text {
+      position: absolute;
+      right: 100%;
+      margin-right: 10px;
+      white-space: nowrap;
+      transform: translate(60px, -50%);
+    }
+    .img-wrapper .label-1 { top: 14%; }
+    .img-wrapper .label-2 { top: 36%; }
+    .img-wrapper .label-3 { top: 56%; }
+    .img-wrapper .label-4 { top: 80%; }
     .lets-know {
       font-family: 'Playfair Display', serif;
       font-size: 0.95rem;
@@ -168,9 +173,8 @@
         padding: 16px;
         gap: 20px;
       }
-      .left-col { align-items: flex-start; }
       .header-title { font-size: 1.4rem; padding: 0 80px; }
-      .center-col img { width: 100%; max-width: 320px; }
+      .img-wrapper img { width: 100%; max-width: 320px; }
       .right-col { max-width: 100%; }
     }
   </style>
@@ -185,41 +189,15 @@
 
   <div class="body-content">
 
-    <!-- LEFT: labels with arrows -->
-    <div class="left-col">
-      <div class="label-row">
-        <span class="label-text">ISTANA SHAH<br>ALAM</span>
-        <svg width="60" height="24" viewBox="0 0 60 24" style="transform:rotate(-30deg);flex-shrink:0;">
-          <line x1="0" y1="12" x2="52" y2="12" stroke="#C8960A" stroke-width="2.5"/>
-          <polygon points="52,6 60,12 52,18" fill="#C8960A"/>
-        </svg>
-      </div>
-      <div class="label-row">
-        <span class="label-text">RUMAH LIMAS</span>
-        <svg width="60" height="24" viewBox="0 0 60 24" style="transform:rotate(-10deg);flex-shrink:0;">
-          <line x1="0" y1="12" x2="52" y2="12" stroke="#C8960A" stroke-width="2.5"/>
-          <polygon points="52,6 60,12 52,18" fill="#C8960A"/>
-        </svg>
-      </div>
-      <div class="label-row">
-        <span class="label-text">BLUE MOSQUE</span>
-        <svg width="60" height="24" viewBox="0 0 60 24" style="transform:rotate(5deg);flex-shrink:0;">
-          <line x1="0" y1="12" x2="52" y2="12" stroke="#C8960A" stroke-width="2.5"/>
-          <polygon points="52,6 60,12 52,18" fill="#C8960A"/>
-        </svg>
-      </div>
-      <div class="label-row">
-        <span class="label-text">SEKINCHAN<br>PADDY FIELD</span>
-        <svg width="60" height="24" viewBox="0 0 60 24" style="transform:rotate(25deg);flex-shrink:0;">
-          <line x1="0" y1="12" x2="52" y2="12" stroke="#C8960A" stroke-width="2.5"/>
-          <polygon points="52,6 60,12 52,18" fill="#C8960A"/>
-        </svg>
-      </div>
-    </div>
-
-    <!-- CENTER: packaging image -->
+    <!-- CENTER: packaging image with labels beside arrow tips -->
     <div class="center-col">
-      <img src="../PURPOSE/packaging.png" alt="Packaging">
+      <div class="img-wrapper">
+        <span class="label-text label-1">ISTANA SHAH ALAM</span>
+        <span class="label-text label-2">RUMAH LIMAS</span>
+        <span class="label-text label-3">BLUE MOSQUE</span>
+        <span class="label-text label-4">SEKINCHAN PADDY FIELD</span>
+        <img src="../photo pg/packaging with arrow.png" alt="Packaging">
+      </div>
       <p class="lets-know">Lets get to know about it !</p>
     </div>
 
