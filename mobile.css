@@ -11,20 +11,26 @@
     position: relative !important;
   }
 
-  /* Header */
+  /* Header override - sub-pages use .header, .header-title (index has no header; SELANGOR/INFRA in bg image) */
+  header,
   .header {
-    min-height: 50px !important;
-    padding: 8px 0 !important;
+    min-height: 40px !important;
+    padding: 6px 10px !important;
   }
 
-  .header-title {
-    font-size: 1.6rem !important;
-    letter-spacing: 2px !important;
-    padding: 0 50px !important;
+  header h1,
+  .header-title,
+  .main-title {
+    font-size: 1.2rem !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
   }
 
-  .header-subtitle {
-    font-size: 0.9rem !important;
+  header h2,
+  .header-subtitle,
+  .sub-title {
+    font-size: 0.7rem !important;
+    margin: 0 !important;
   }
 
   /* HOME PAGE - compact right-side nav, middle vertical zone, house image clear on left */
