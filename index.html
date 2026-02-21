@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selangor Infrastructure</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      width: 100%;
+    }
+
+    /* MAIN AREA — fills all space between nothing and footer */
+    .main-content {
+      flex: 1;
+      position: relative;
+      background-image: url('main%20pg/MAIN%20PG.png');
+      background-size: 100% 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      overflow: hidden;
+    }
+
+    /* BUTTONS on right side */
+    .right-col {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 260px;
+      position: absolute;
+      right: 10px;
+      top: 60%;
+      transform: translateY(-50%);
+    }
+
+    .nav-btn {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .nav-btn:hover { opacity: 0.8; }
+
+    .btn-label {
+      flex: 1;
+      background-color: #3B1F0E;
+      color: #F5EDD6;
+      font-family: 'Playfair Display', serif;
+      font-size: 0.65rem;
+      font-weight: 700;
+      padding: 9px 12px;
+      border-radius: 999px;
+      text-align: center;
+      letter-spacing: 1.5px;
+    }
+
+    .btn-arrow {
+      background-color: #6B4423;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      border: 2px solid #8B6443;
+    }
+    .btn-arrow::after {
+      content: '❯';
+      color: #F5EDD6;
+      font-size: 0.85rem;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #3B1F0E;
+      color: #F0E6C8;
+      text-align: center;
+      padding: 12px;
+      font-family: 'Playfair Display', serif;
+      font-size: 0.85rem;
+      line-height: 1.6;
+      flex-shrink: 0;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      html, body { overflow: auto; }
+      .wrapper { height: auto; }
+      .main-content {
+        min-height: 100vw;
+        background-position: center top;
+      }
+      .right-col {
+        position: static;
+        transform: none;
+        width: 90%;
+        margin: 20px auto;
+        padding-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <div class="main-content">
+    <div class="right-col">
+      <a href="pages/video.html" class="nav-btn">
+        <span class="btn-label">VIDEO</span>
+        <span class="btn-arrow"></span>
+      </a>
+      <a href="pages/photos-in-packaging.html" class="nav-btn">
+        <span class="btn-label">PHOTOS IN PACKAGING</span>
+        <span class="btn-arrow"></span>
+      </a>
+      <a href="pages/purpose.html" class="nav-btn">
+        <span class="btn-label">PURPOSE</span>
+        <span class="btn-arrow"></span>
+      </a>
+      <a href="pages/rumah-limas.html" class="nav-btn">
+        <span class="btn-label">RUMAH LIMAS</span>
+        <span class="btn-arrow"></span>
+      </a>
+      <a href="pages/istana-shah-alam.html" class="nav-btn">
+        <span class="btn-label">ISTANA SHAH ALAM</span>
+        <span class="btn-arrow"></span>
+      </a>
+      <a href="pages/blue-mosque.html" class="nav-btn">
+        <span class="btn-label">BLUE MOSQUE</span>
+        <span class="btn-arrow"></span>
+      </a>
+      <a href="pages/sekinchan-paddy-field.html" class="nav-btn">
+        <span class="btn-label">SEKINCHAN PADDY FIELD</span>
+        <span class="btn-arrow"></span>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    @ali,muthu&ahhock<br>2026
+  </footer>
+
+</div>
+</body>
+</html>

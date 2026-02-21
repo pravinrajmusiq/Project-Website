@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purpose - SELANGOR</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+
+    html, body {
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    .header {
+      position: relative;
+      flex-shrink: 0;
+      background: repeating-linear-gradient(
+        90deg,
+        #2C1206 0px, #2C1206 6px,
+        #4A1F08 6px, #4A1F08 8px
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 0;
+      min-height: 70px;
+    }
+
+    .header-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      color: #F5EDD6;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+      letter-spacing: 6px;
+      margin: 0;
+      text-align: center;
+      padding: 0 180px;
+    }
+
+    .back-link {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 150px;
+      height: 100%;
+      z-index: 10;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 24px;
+      text-decoration: none;
+      color: #F5EDD6;
+      font-family: 'Playfair Display', serif;
+      font-size: 0.95rem;
+    }
+    .back-link::before { content: 'BACK ❯'; }
+
+    .body-content {
+      flex: 1;
+      position: relative;
+      background-color: #EDE8D0;
+      background-image: url('../PURPOSE/DOODLE.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 20px;
+      overflow: hidden;
+      gap: 16px;
+    }
+
+    .body-content::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(237, 232, 208, 0.72);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .left-col {
+      position: relative;
+      z-index: 1;
+      background: #3B1F0E;
+      border-radius: 16px;
+      padding: 28px 36px;
+      min-width: 260px;
+      max-width: 320px;
+    }
+    .left-col ul {
+      list-style: disc;
+      padding-left: 22px;
+    }
+    .left-col ul li {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.15rem;
+      line-height: 2.2;
+      color: #F5EDD6;
+    }
+
+    .right-col {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .right-col img {
+      width: 340px;
+      height: auto;
+      display: block;
+    }
+
+    footer {
+      background: #3B1F0E;
+      color: #F0E6C8;
+      text-align: center;
+      padding: 10px;
+      font-family: 'Playfair Display', serif;
+      font-size: 0.85rem;
+      line-height: 1.6;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 768px) {
+      html, body { overflow: auto; }
+      .wrapper { height: auto; }
+      .header-title { font-size: 1.6rem; padding: 0 100px; }
+      .body-content { padding: 16px; }
+      .main-photo, .explain-box { max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1 class="header-title">PURPOSE</h1>
+    <a href="../index.html" class="back-link"></a>
+  </div>
+  <div class="body-content">
+
+    <div class="left-col">
+      <ul>
+        <li>Boost Local Tourism</li>
+        <li>Connects to community</li>
+        <li>Selangor Pride</li>
+      </ul>
+    </div>
+
+    <div class="right-col">
+      <img src="../PURPOSE/packaging.png" alt="Packaging">
+    </div>
+
+  </div>
+  <footer>@ali,muthu&ahhock<br>2026</footer>
+</div>
+</body>
+</html>
