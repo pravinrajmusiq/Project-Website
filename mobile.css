@@ -1,14 +1,32 @@
 @media (max-width: 768px) {
 
   html, body {
-    overflow: auto !important;
-    height: auto !important;
+    height: 100% !important;
+    overflow: hidden !important;
+  }
+
+  body {
+    display: flex !important;
+    flex-direction: column !important;
   }
 
   .wrapper {
-    height: auto !important;
-    min-height: 100vh;
+    height: 100vh !important;
+    min-height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
     position: relative !important;
+  }
+
+  /* Home page: hero fills space between header and footer, no scroll */
+  .main-content {
+    flex: 1 !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+    background-size: contain !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
   }
 
   /* Header override - sub-pages use .header, .header-title (index has no header; SELANGOR/INFRA in bg image) */
@@ -115,5 +133,6 @@
   footer {
     padding: 14px !important;
     font-size: 0.8rem !important;
+    flex-shrink: 0 !important;
   }
 }
