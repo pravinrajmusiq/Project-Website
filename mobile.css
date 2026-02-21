@@ -1,0 +1,116 @@
+/* Mobile responsive styles - phone view */
+@media (max-width: 768px) {
+  html, body {
+    overflow: auto !important;
+  }
+
+  .wrapper {
+    height: auto !important;
+    min-height: 100vh;
+  }
+
+  /* Header - all pages */
+  .header-title {
+    font-size: 1.4rem !important;
+    padding: 0 60px !important;
+    letter-spacing: 2px !important;
+  }
+
+  .back-link {
+    width: 80px !important;
+    padding-right: 12px !important;
+    font-size: 0.8rem !important;
+  }
+
+  /* Index - main page */
+  .main-content {
+    min-height: 100vw;
+    background-size: cover;
+    background-position: center top;
+  }
+
+  .main-content .right-col {
+    position: static !important;
+    transform: none !important;
+    width: 90% !important;
+    max-width: 320px;
+    margin: 20px auto !important;
+    padding-bottom: 20px;
+  }
+
+  .btn-label {
+    font-size: 0.6rem !important;
+    padding: 8px 10px !important;
+  }
+
+  /* Sub-pages: rumah-limas, blue-mosque, istana-shah-alam, sekinchan-paddy-field */
+  .body-content {
+    overflow-y: auto !important;
+    padding: 12px 10px !important;
+  }
+
+  .content-group {
+    width: 95% !important;
+    max-width: 100%;
+  }
+
+  .main-photo {
+    max-height: 40vh !important;
+  }
+
+  .explain-box {
+    height: 120px !important;
+  }
+
+  /* Purpose page - two columns */
+  .body-content {
+    flex-direction: column !important;
+    gap: 16px !important;
+    padding: 16px 12px !important;
+  }
+
+  .body-content .left-col {
+    min-width: unset !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 20px 16px !important;
+  }
+
+  .body-content .right-col img {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  /* Photos in packaging - three columns */
+  .body-content .left-col,
+  .body-content .center-col,
+  .body-content .right-col {
+    min-width: unset !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .body-content .left-col {
+    align-items: flex-start !important;
+  }
+
+  .body-content .center-col img {
+    width: 100% !important;
+    max-width: 320px !important;
+  }
+
+  .body-content .label-row {
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+  }
+
+  /* Video page */
+  .body-content video {
+    max-width: 100% !important;
+  }
+
+  footer {
+    font-size: 0.75rem !important;
+    padding: 8px !important;
+  }
+}
