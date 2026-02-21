@@ -12,10 +12,19 @@
   }
 
   /* Header */
+  .header {
+    min-height: 50px !important;
+    padding: 8px 0 !important;
+  }
+
   .header-title {
-    font-size: 1.4rem !important;
+    font-size: 1.6rem !important;
     letter-spacing: 2px !important;
-    padding: 0 70px !important;
+    padding: 0 50px !important;
+  }
+
+  .header-subtitle {
+    font-size: 0.9rem !important;
   }
 
   /* HOME PAGE - compact right-side nav, middle vertical zone, house image clear on left */
