@@ -22,24 +22,28 @@
     font-size: 0.8rem !important;
   }
 
-  /* HOME PAGE - buttons float at top, image shows below */
+  /* HOME PAGE - buttons on right side, not blocking house */
   .nav-wrapper {
-    position: static !important;
+    position: absolute !important;
+    top: 80px !important;
+    right: 8px !important;
+    left: auto !important;
     display: flex !important;
     flex-direction: column !important;
-    align-items: center !important;
+    align-items: flex-end !important;
     justify-content: flex-start !important;
-    padding: 10px 16px 16px !important;
-    gap: 6px !important;
-    min-height: auto !important;
+    padding: 0 !important;
+    gap: 7px !important;
+    z-index: 10 !important;
+    width: 55% !important;
   }
 
   .nav-btn {
-    width: 85% !important;
-    max-width: 300px !important;
-    font-size: 0.6rem !important;
-    padding: 7px 14px !important;
+    width: 100% !important;
+    font-size: 0.52rem !important;
+    padding: 7px 10px !important;
     min-height: unset !important;
+    letter-spacing: 0.5px !important;
   }
 
   /* Sub-pages: rumah-limas, blue-mosque, istana-shah-alam, sekinchan-paddy-field */
