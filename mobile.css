@@ -80,16 +80,32 @@
     height: auto !important;
   }
 
+  /* RUMAH LIMAS / content pages - house + explain stacked, clean layout */
+  .body-content .content-group {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
   .main-photo {
-    width: 92% !important;
+    width: 90% !important;
     height: auto !important;
     max-height: none !important;
+    display: block !important;
+    margin: 0 auto !important;
   }
 
   .explain-box {
-    width: 92% !important;
+    width: 90% !important;
     height: auto !important;
     max-height: none !important;
+    display: block !important;
+    margin: 10px auto !important;
   }
 
   .left-col {
