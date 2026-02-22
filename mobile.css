@@ -93,19 +93,19 @@
   }
 
   .main-photo {
-    width: 98% !important;
-    height: auto !important;
-    max-height: none !important;
+    margin-top: 20px !important;
+    height: 35vh !important;
+    width: auto !important;
     display: block !important;
-    margin: 5px auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   .explain-box {
-    width: 98% !important;
+    width: 95% !important;
     height: auto !important;
-    max-height: none !important;
     display: block !important;
-    margin: 5px auto !important;
+    margin: 10px auto !important;
   }
 
   .left-col {
