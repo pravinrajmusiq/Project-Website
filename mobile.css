@@ -47,6 +47,10 @@
     display: block !important;
     margin-left: auto !important;
     margin-right: auto !important;
+    font-size: 1.8rem !important;
+    text-align: center !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
   }
   .main-content .right-col {
     margin-top: -80px !important;
