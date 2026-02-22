@@ -86,16 +86,16 @@
       z-index: 1;
     }
 
-    /* INFRASTRUCTURE - full width at top of body, faded watermark, behind other elements */
+    /* INFRASTRUCTURE - left-aligned at top of body, full text visible, faded watermark */
     .hero-body .infra-img {
       position: absolute;
       left: 0;
       top: 0;
-      width: 100%;
+      width: 75%;
       height: auto;
-      object-fit: cover;
-      object-position: center top;
-      opacity: 0.45;
+      object-fit: contain;
+      object-position: left top;
+      opacity: 0.4;
       z-index: 0;
     }
 
@@ -193,8 +193,9 @@
       .hero-body .infra-img {
         left: 0;
         top: 0;
-        width: 100%;
-        opacity: 0.45;
+        width: 75%;
+        object-position: left top;
+        opacity: 0.4;
       }
       .hero-header {
         background-size: 15% 100%;
@@ -219,7 +220,7 @@
     <div class="hero-body">
       <img src="main%20pg/Tourism_Malaysia_logo.png" alt="Tourism Malaysia" class="tourism-logo">
       <img src="main%20pg/INFRA.png" alt="INFRASTRUCTURE" class="infra-img">
-      <img src="RUMAH%20LIMAS/limas%20house.png" alt="Rumah Limas" class="house-img">
+      <img src="main%20pg/rumah%20limas.png" alt="Rumah Limas" class="house-img">
     <div class="right-col">
       <a href="pages/video.html" class="nav-btn">
         <span class="btn-label">VIDEO</span>
