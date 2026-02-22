@@ -86,17 +86,17 @@
       z-index: 1;
     }
 
-    /* INFRASTRUCTURE - large faded watermark, center-left of body */
+    /* INFRASTRUCTURE - full width at top of body, faded watermark, behind other elements */
     .hero-body .infra-img {
       position: absolute;
-      left: 25%;
-      top: 15%;
-      transform: translateX(-50%);
-      width: 55%;
-      max-width: 480px;
+      left: 0;
+      top: 0;
+      width: 100%;
       height: auto;
-      opacity: 0.28;
-      z-index: 1;
+      object-fit: cover;
+      object-position: center top;
+      opacity: 0.45;
+      z-index: 0;
     }
 
     /* House image - left center/bottom */
@@ -191,9 +191,10 @@
         font-size: 4rem;
       }
       .hero-body .infra-img {
-        left: 25%;
-        width: 60%;
-        opacity: 0.28;
+        left: 0;
+        top: 0;
+        width: 100%;
+        opacity: 0.45;
       }
       .hero-header {
         background-size: 15% 100%;
