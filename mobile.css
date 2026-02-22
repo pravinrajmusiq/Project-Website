@@ -97,7 +97,7 @@
     height: auto !important;
     display: block !important;
     margin: 15px auto !important;
-    max-height: 50vh !important;
+    max-height: 40vh !important;
   }
 
   .explain-box {
@@ -105,7 +105,7 @@
     height: auto !important;
     display: block !important;
     margin: 10px auto !important;
-    min-height: 280px !important;
+    min-height: 200px !important;
   }
 
   .left-col {
