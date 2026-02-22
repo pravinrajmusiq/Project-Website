@@ -101,11 +101,11 @@
   }
 
   .explain-box {
-    width: 92% !important;
+    width: 98% !important;
     height: auto !important;
     display: block !important;
     margin: 10px auto !important;
-    min-height: 150px !important;
+    min-height: 200px !important;
   }
 
   .left-col {
