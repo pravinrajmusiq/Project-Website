@@ -31,25 +31,28 @@
       overflow: hidden;
     }
 
-    /* Header wood stripe */
+    /* Header wood stripe - thin stripes */
     .hero-header {
       flex-shrink: 0;
       position: relative;
       height: 14vh;
       min-height: 90px;
       background-image: url('main%20pg/wood.png');
-      background-size: cover;
+      background-size: 15% 100%;
       background-repeat: repeat-x;
       background-position: center;
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    .hero-header img.selangor {
-      height: 70%;
-      max-height: 65px;
-      width: auto;
-      object-fit: contain;
+    .hero-header .selangor {
+      font-family: 'Playfair Display', serif;
+      font-size: 6rem;
+      font-weight: 700;
+      color: #F5EDD6;
+      text-align: center;
+      margin: 0;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
     }
 
     /* Body area - beige + doodle pattern */
@@ -83,15 +86,16 @@
       z-index: 1;
     }
 
-    /* INFRASTRUCTURE text - centered */
+    /* INFRASTRUCTURE - large faded watermark, center-left of body */
     .hero-body .infra-img {
       position: absolute;
-      left: 50%;
-      top: 12%;
+      left: 25%;
+      top: 15%;
       transform: translateX(-50%);
-      width: 45%;
-      max-width: 380px;
+      width: 55%;
+      max-width: 480px;
       height: auto;
+      opacity: 0.28;
       z-index: 1;
     }
 
@@ -183,6 +187,17 @@
       .main-content {
         min-height: 100vw;
       }
+      .hero-header .selangor {
+        font-size: 4rem;
+      }
+      .hero-body .infra-img {
+        left: 25%;
+        width: 60%;
+        opacity: 0.28;
+      }
+      .hero-header {
+        background-size: 15% 100%;
+      }
       .right-col {
         position: static;
         transform: none;
@@ -198,7 +213,7 @@
 
   <div class="main-content">
     <div class="hero-header">
-      <img src="main%20pg/SLEANGOR.png" alt="SELANGOR" class="selangor">
+      <h1 class="selangor">SELANGOR</h1>
     </div>
     <div class="hero-body">
       <img src="main%20pg/Tourism_Malaysia_logo.png" alt="Tourism Malaysia" class="tourism-logo">
