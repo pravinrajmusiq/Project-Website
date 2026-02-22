@@ -161,16 +161,6 @@
   .body-content:has(.info-col) .right-col {
     width: 100% !important;
     flex: 0 0 100% !important;
-    background-image: url('photo%20pg/info.png') !important;
-    background-size: contain !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-color: transparent !important;
-    color: transparent !important;
-    font-size: 0 !important;
-    line-height: 0 !important;
-    padding: 24px !important;
-    min-height: 280px !important;
   }
 
   .right-col img {
