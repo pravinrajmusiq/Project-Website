@@ -74,18 +74,19 @@
       pointer-events: none;
     }
 
-    /* INFRASTRUCTURE - in circled area below SELANGOR, faded watermark */
+    /* INFRASTRUCTURE - in circled area below SELANGOR, muted taupe #B3A48C */
     .hero-body .infra-img {
       position: absolute;
       left: 50%;
       top: 0;
       transform: translateX(-50%);
-      width: 70%;
-      max-width: 500px;
-      height: auto;
-      object-fit: contain;
-      object-position: center top;
-      opacity: 0.45;
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: #B3A48C;
+      letter-spacing: 0.12em;
+      margin: 0;
+      white-space: nowrap;
       z-index: 0;
     }
 
@@ -193,11 +194,7 @@
         font-size: 4rem;
       }
       .hero-body .infra-img {
-        left: 50%;
-        top: 0;
-        transform: translateX(-50%);
-        width: 70%;
-        opacity: 0.45;
+        font-size: 2.5rem;
       }
       .hero-header {
         background-size: 15% 100%;
@@ -221,7 +218,7 @@
     </div>
     <div class="hero-body">
       <img src="main%20pg/Tourism_Malaysia_logo.png" alt="Tourism Malaysia" class="tourism-logo">
-      <img src="main%20pg/INFRA.png" alt="INFRASTRUCTURE" class="infra-img">
+      <h2 class="infra-img">INFRASTRUCTURE</h2>
       <img src="main%20pg/rumah%20limas.png" alt="Rumah Limas" class="house-img">
     <div class="right-col">
       <a href="pages/video.html" class="nav-btn">
