@@ -100,12 +100,19 @@
     max-height: 40vh !important;
   }
 
+  .body-content .content-group picture {
+    display: block !important;
+    width: 100% !important;
+  }
+
   .explain-box {
-    width: 98% !important;
+    width: 100% !important;
     height: auto !important;
     display: block !important;
     margin: 10px auto !important;
-    min-height: 200px !important;
+    min-height: 320px !important;
+    object-fit: contain !important;
+    object-position: center !important;
   }
 
   .left-col {
