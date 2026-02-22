@@ -35,15 +35,18 @@
 
   /* INDEX HOME PAGE - house, nav, SELANGOR, INFRA */
   .hero-body .house-img {
-    width: 95% !important;
+    width: 100% !important;
     height: auto !important;
+    margin-top: -60px !important;
   }
   .hero-header .selangor {
     font-size: 2.5rem !important;
   }
   .hero-body .infra-img {
-    width: 70% !important;
-    height: auto !important;
+    width: 55% !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
   .main-content .right-col {
     margin-top: -80px !important;
