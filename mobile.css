@@ -135,6 +135,7 @@
     flex: 0 0 auto !important;
     margin-right: 0 !important;
     gap: 8px !important;
+    margin-top: 24px !important;
   }
   .body-content:has(.center-col) .label-text {
     font-size: 0.6rem !important;
@@ -157,6 +158,10 @@
   .body-content:has(.center-col) .right-col {
     width: 100% !important;
     flex: 0 0 100% !important;
+  }
+  .body-content:has(.center-col) .lets-know {
+    text-align: center !important;
+    width: 100% !important;
   }
 
   .right-col img {
