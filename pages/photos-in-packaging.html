@@ -86,52 +86,19 @@
       pointer-events: none;
     }
 
-    /* LEFT - labels with gold arrows */
-    .left-col {
+    /* LEFT - info image */
+    .info-col {
       position: relative;
       z-index: 1;
       display: flex;
-      flex-direction: column;
-      gap: 36px;
-      align-items: flex-end;
-      min-width: 220px;
-      margin-right: -10px;
-    }
-    .label-row {
-      display: flex;
       align-items: center;
-      gap: 12px;
+      justify-content: center;
     }
-    .label-text {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 0.95rem;
-      font-weight: 700;
-      color: #3B1F0E;
-      letter-spacing: 1px;
-      text-align: right;
-      line-height: 1.3;
-    }
-    /* CENTER - packaging image + caption */
-    .center-col {
-      position: relative;
-      z-index: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 12px;
-    }
-    .center-col img {
-      width: 320px;
+    .info-col .info-img {
+      width: 100%;
+      max-width: 500px;
       height: auto;
       display: block;
-    }
-    .lets-know {
-      font-family: 'Playfair Display', serif;
-      font-size: 0.95rem;
-      color: #3B1F0E;
-      font-style: italic;
-      font-weight: 700;
-      text-align: center;
     }
 
     /* RIGHT - dark brown info box */
@@ -168,9 +135,8 @@
         padding: 16px;
         gap: 20px;
       }
-      .left-col { align-items: flex-start; }
+      .info-col .info-img { width: 100%; max-width: 100%; }
       .header-title { font-size: 1.4rem; padding: 0 80px; }
-      .center-col img { width: 100%; max-width: 320px; }
       .right-col { max-width: 100%; }
     }
   </style>
@@ -185,42 +151,9 @@
 
   <div class="body-content">
 
-    <!-- LEFT: labels with arrows -->
-    <div class="left-col">
-      <div class="label-row">
-        <span class="label-text">ISTANA SHAH<br>ALAM</span>
-        <svg width="60" height="24" viewBox="0 0 60 24" style="transform:rotate(-30deg);flex-shrink:0;">
-          <line x1="0" y1="12" x2="52" y2="12" stroke="#C8960A" stroke-width="2.5"/>
-          <polygon points="52,6 60,12 52,18" fill="#C8960A"/>
-        </svg>
-      </div>
-      <div class="label-row">
-        <span class="label-text">RUMAH LIMAS</span>
-        <svg width="60" height="24" viewBox="0 0 60 24" style="transform:rotate(-10deg);flex-shrink:0;">
-          <line x1="0" y1="12" x2="52" y2="12" stroke="#C8960A" stroke-width="2.5"/>
-          <polygon points="52,6 60,12 52,18" fill="#C8960A"/>
-        </svg>
-      </div>
-      <div class="label-row">
-        <span class="label-text">BLUE MOSQUE</span>
-        <svg width="60" height="24" viewBox="0 0 60 24" style="transform:rotate(5deg);flex-shrink:0;">
-          <line x1="0" y1="12" x2="52" y2="12" stroke="#C8960A" stroke-width="2.5"/>
-          <polygon points="52,6 60,12 52,18" fill="#C8960A"/>
-        </svg>
-      </div>
-      <div class="label-row">
-        <span class="label-text">SEKINCHAN<br>PADDY FIELD</span>
-        <svg width="60" height="24" viewBox="0 0 60 24" style="transform:rotate(25deg);flex-shrink:0;">
-          <line x1="0" y1="12" x2="52" y2="12" stroke="#C8960A" stroke-width="2.5"/>
-          <polygon points="52,6 60,12 52,18" fill="#C8960A"/>
-        </svg>
-      </div>
-    </div>
-
-    <!-- CENTER: packaging image -->
-    <div class="center-col">
-      <img src="../PURPOSE/packaging.png" alt="Packaging">
-      <p class="lets-know">Lets get to know about it !</p>
+    <!-- LEFT: info image -->
+    <div class="info-col">
+      <img src="../photo%20pg/info.png" alt="Infrastructure info" class="info-img">
     </div>
 
     <!-- RIGHT: info box -->
