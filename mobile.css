@@ -93,19 +93,19 @@
   }
 
   .main-photo {
-    width: 95% !important;
+    width: 98% !important;
     height: auto !important;
     max-height: none !important;
     display: block !important;
-    margin: 10px auto 0 auto !important;
+    margin: 5px auto !important;
   }
 
   .explain-box {
-    width: 95% !important;
+    width: 98% !important;
     height: auto !important;
     max-height: none !important;
     display: block !important;
-    margin: 0 auto 10px auto !important;
+    margin: 5px auto !important;
   }
 
   .left-col {
