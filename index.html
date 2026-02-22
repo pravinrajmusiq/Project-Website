@@ -74,6 +74,21 @@
       pointer-events: none;
     }
 
+    /* INFRASTRUCTURE - in circled area below SELANGOR, faded watermark */
+    .hero-body .infra-img {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      width: 70%;
+      max-width: 500px;
+      height: auto;
+      object-fit: contain;
+      object-position: center top;
+      opacity: 0.45;
+      z-index: 0;
+    }
+
     /* Tourism Malaysia logo - top left */
     .hero-body .tourism-logo {
       position: absolute;
@@ -177,6 +192,13 @@
       .hero-header .selangor {
         font-size: 4rem;
       }
+      .hero-body .infra-img {
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        width: 70%;
+        opacity: 0.45;
+      }
       .hero-header {
         background-size: 15% 100%;
       }
@@ -199,6 +221,7 @@
     </div>
     <div class="hero-body">
       <img src="main%20pg/Tourism_Malaysia_logo.png" alt="Tourism Malaysia" class="tourism-logo">
+      <img src="main%20pg/INFRA.png" alt="INFRASTRUCTURE" class="infra-img">
       <img src="main%20pg/rumah%20limas.png" alt="Rumah Limas" class="house-img">
     <div class="right-col">
       <a href="pages/video.html" class="nav-btn">
