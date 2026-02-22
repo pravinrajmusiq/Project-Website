@@ -93,26 +93,25 @@
   }
 
   .main-photo {
-    width: 92% !important;
-    height: 280px !important;
+    width: 90% !important;
+    height: auto !important;
     display: block !important;
     margin: 15px auto !important;
-    object-fit: contain !important;
-    object-position: center !important;
+    max-height: 40vh !important;
   }
 
   .body-content .content-group picture {
     display: block !important;
-    width: 92% !important;
-    margin: 15px auto !important;
+    width: 100% !important;
   }
 
   .explain-box {
     width: 100% !important;
-    height: 280px !important;
+    height: auto !important;
     display: block !important;
-    margin: 0 !important;
-    object-fit: cover !important;
+    margin: 10px auto !important;
+    min-height: 320px !important;
+    object-fit: contain !important;
     object-position: center !important;
   }
 
